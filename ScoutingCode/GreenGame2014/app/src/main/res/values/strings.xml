@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Function FIRST</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_scout">SCOUT</string>
+    <string name="button_review">REVIEW</string>
+    <string name="button_about">ABOUT</string>
+    <string name="text_appTitle">Function FIRST - GreenGame 2014</string>
+    <string name="text_appVersion">Version 0.1.0</string>
+    <string name="text_developerInfo">Developed by FRC Team 701</string>
+    <string name="title_activity_review">Function FIRST - Review</string>
+    <string name="text_missingPage">Oops!  It seems this page is missing.  Maybe we are working on development.</string>
+    <string name="title_activity_scout">Function FIRST - Scout</string>
+    <string name="button_ok">OK</string>
+    <string name="text_messageAbout">Function First is an electronic FRC scouting application designed
+        to analyze real statistical data on teams as they compete.  This version is designed for use
+        with the 2014 GreenGame.\nDesigned by Joseph Lewis, FIRST Team 701</string>
+</resources>
