@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="vandenrobotics.com.greengame2014" >
 
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -17,20 +21,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ReviewActivity"
-            android:label="@string/title_activity_review"
-            android:parentActivityName=".MainActivity" >
+            android:name=".ScoutActivity"
+            android:label="@string/title_activity_scout"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="vandenrobotics.com.greengame2014.MainActivity" />
         </activity>
         <activity
-            android:name=".ScoutActivity"
-            android:label="@string/title_activity_scout"
-            android:parentActivityName=".MainActivity" >
+            android:name=".MatchActivity"
+            android:label="@string/title_activity_match"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".ScoutActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="vandenrobotics.com.greengame2014.MainActivity" />
+                android:value="vandenrobotics.com.greengame2014.ScoutActivity" />
         </activity>
     </application>
 
