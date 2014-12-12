@@ -1,16 +1,14 @@
 package vandenrobotics.com.greengame2014;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +18,6 @@ public class MainActivity extends ActionBarActivity {
 
     public void activityScout(View view) {
         Intent intent = new Intent(this, ScoutActivity.class);
-        startActivity(intent);
-    }
-
-    public void activityReview(View view) {
-        Intent intent = new Intent(this, ReviewActivity.class);
         startActivity(intent);
     }
 
