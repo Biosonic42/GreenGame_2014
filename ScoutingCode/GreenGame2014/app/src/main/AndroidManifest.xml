@@ -6,6 +6,14 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -21,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ScoutActivity"
+            android:name=".scout.ScoutActivity"
             android:label="@string/title_activity_scout"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="landscape" >
@@ -30,13 +38,21 @@
                 android:value="vandenrobotics.com.greengame2014.MainActivity" />
         </activity>
         <activity
-            android:name=".MatchActivity"
+            android:name=".scout.MatchActivity"
             android:label="@string/title_activity_match"
-            android:screenOrientation="landscape"
-            android:parentActivityName=".ScoutActivity" >
+            android:parentActivityName=".scout.ScoutActivity"
+            android:screenOrientation="landscape" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="vandenrobotics.com.greengame2014.ScoutActivity" />
+                android:value=".scout.ScoutActivity" />
+        </activity>
+        <activity
+            android:name=".review.ReviewActivity"
+            android:label="@string/title_activity_review"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vandenrobotics.com.greengame2014.MainActivity" />
         </activity>
     </application>
 

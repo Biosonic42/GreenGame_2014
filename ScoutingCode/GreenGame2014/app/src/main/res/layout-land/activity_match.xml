@@ -5,7 +5,7 @@
     android:background="@color/DarkGreen"
     tools:context=".MatchActivity">
 
-    <vandenrobotics.com.greengame2014.adapter.TabsViewPager
+    <android.support.v4.view.ViewPager
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/pager"
@@ -23,7 +23,7 @@
             android:background="@color/DarkBlue"
             android:textColor="@color/DarkBlue"/>
 
-    </vandenrobotics.com.greengame2014.adapter.TabsViewPager>
+    </android.support.v4.view.ViewPager>
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,6 +55,35 @@
         android:text="@string/text_deviceNumber"
         android:typeface="serif"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <android.support.v4.app.FragmentTabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/initMatchNumber">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Black"/>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@android:id/tabs">
+
+                </FrameLayout>
+        </RelativeLayout>
+    </android.support.v4.app.FragmentTabHost>
 
 
 

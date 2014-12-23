@@ -8,27 +8,30 @@
     <string name="button_about">ABOUT APP</string>
     <string name="text_appTitle">FUNCTION FIRST</string>
     <string name="text_appSubtitle">For the 2014 GreenGame: Noodle Frenzy</string>
-    <string name="text_appVersion">Development Version 12/10/2014</string>
+    <string name="text_appVersion">Development Version 12/22/2014</string>
     <string name="text_developerInfo">Designed by FIRST Team 701</string>
-
     <string name="text_messageAbout">Function First is an electronic FRC scouting application designed
         to analyze real statistical data on teams as they compete.  This version is designed for use
         with the 2014 GreenGame.\nDesigned by Joseph Lewis, FIRST Team 701</string>
+    <string name="text_titleNoShow">Proceed to Next Match?</string>
+    <string name="text_messageNoShow">Click OK to mark this robot as a no show and continue to the next match.</string>
     <string name="button_ok">OK</string>
-
+    <string name="button_cancel">Cancel</string>
     <string name="title_activity_scout">Function FIRST - Scout</string>
     <string name="text_scoutInfo">Loading Next Match</string>
-
+    <string name="button_nextMatch">Next Match</string>
     <string name="text_missingPage">Oops!  It seems this page is missing.</string>
-
     <string name="title_activity_match">MatchActivity</string>
-    <string name="title_initTab">Team Information</string>
+    <string name="title_initTab">Init Info</string>
     <string name="title_autoTab">Autonomous</string>
-    <string name="title_teleTab">Tele-Operated</string>
-    <string name="title_postTab">Post Match Information</string>
-
+    <string name="title_teleTab">Tele-Op</string>
+    <string name="title_postTab">Post Match</string>
     <string name="text_teamNumber">Team #</string>
     <string name="text_matchNumber">Match #</string>
     <string name="text_deviceNumber">Device #</string>
+    <string name="cb_noShow">No Show</string>
+    <string name="text_fieldDiagram">Field Diagram</string>
+    <string name="title_activity_review">ReviewActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

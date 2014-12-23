@@ -77,6 +77,16 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/button_review"
+            android:id="@+id/button_review"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textColor="@color/Gold"
+            android:onClick="activityReview" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/button_about"
             android:textColor="@color/Gold"
             android:id="@+id/button_about"

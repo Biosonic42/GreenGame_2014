@@ -17,8 +17,11 @@ public class MainActivity extends Activity {
     }
 
     public void activityScout(View view) {
-        Intent intent = new Intent(this, ScoutActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(this, vandenrobotics.com.greengame2014.scout.ScoutActivity.class));
+    }
+
+    public void activityReview(View view) {
+        startActivity(new Intent(this, vandenrobotics.com.greengame2014.review.ReviewActivity.class));
     }
 
     public void messageAbout(View view) {
