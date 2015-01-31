@@ -1,13 +1,14 @@
 package vandenrobotics.com.greengame2014.scout.tabs;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.ImageView;
+
+import com.squareup.picasso.Picasso;
 
 import vandenrobotics.com.greengame2014.R;
 import vandenrobotics.com.greengame2014.scout.dialogs.NoShowDialogFragment;
@@ -18,6 +19,7 @@ import vandenrobotics.com.greengame2014.scout.dialogs.NoShowDialogFragment;
 public class InitFragment extends Fragment {
 
     private CheckBox noShow;
+    private ImageView robotPic;
     public NoShowDialogFragment noShowDF;
 
 
@@ -71,7 +73,11 @@ public class InitFragment extends Fragment {
 
     private void assignViews(View view){
         try{
-            noShow = (CheckBox)view.findViewById(R.id.cb_noShow);
+            noShow = (CheckBox) view.findViewById(R.id.cb_noShow);
+            robotPic = (ImageView) view.findViewById(R.id.img_teamPic);
+            String url = "https://lh5.googleusercontent.com/-Wnd2tLc6DKI/VJFD50_M3oI/AAAAAAAAiNQ/9syW2hURsC0/s426/IMG_5391.JPG";
+            Picasso.with(getActivity()).load(url).into(robotPic);
+
 
             viewsAssigned = true;
         } catch (Exception e){

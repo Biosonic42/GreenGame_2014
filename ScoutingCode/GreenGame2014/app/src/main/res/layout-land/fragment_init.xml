@@ -17,11 +17,11 @@
         android:textColor="@color/Gold"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:typeface="serif"
-        android:onClick="command_noShow"/>
+        android:onClick="dialog_noShow"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/img_teamPic"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
